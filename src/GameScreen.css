@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.truck-area {
+    height: 35vh;
+    padding: 10%;
+    background: url(assets/Houses.png);
+    background-size: cover;
+    background-position: bottom;
+    border-bottom: 5px solid #111;
+}
+
+.waste-area {
+    height: 65vh;
+    background: url(assets/board.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.display {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 20vw;
+    background: #bcd9db;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    border-radius: 10px;
+    border: 5px solid #111;
+}
+
+.display h1 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.display--score {
+    font-weight: 700;
+}
+
+.display--lives {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.display--heart-icon {
+    font-size: 20px;
+    color: #c33837;
+}
+
+.broken {
+    color: #6f7d7e;
+}
