@@ -1,10 +1,15 @@
 body, html {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 * {
     box-sizing: border-box;
+}
+
+.game-screen {
+    max-width: 390px;
 }
 
 .truck-area {
@@ -14,7 +19,29 @@ body, html {
     background-size: cover;
     background-position: bottom;
     border-bottom: 5px solid #111;
+    position: relative;
 }
+
+.truck {
+    width: 148px;
+    height: 90px;
+    background: url('src/assets/Truck.png');
+    background-size: cover;
+    position: absolute;
+    bottom: 5px;
+    left: 410px;
+    animation: movingTruck 12s linear infinite;
+}
+
+@keyframes movingTruck {
+    from {
+        left: -150px;
+    }
+    to {
+        left: 410px;
+    }
+}
+
 
 .waste-area {
     height: 70vh;
@@ -30,8 +57,8 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40vw;
-    height: 20vw;
+    width: 40%;
+    height: 20%;
     background: #bcd9db;
     position: absolute;
     top: 15px;
